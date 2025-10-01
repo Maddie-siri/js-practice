@@ -108,7 +108,7 @@ console.log(fruitis);
 let numbers =[ 1,2,3];
 let thripled = numbers.map(n => n*3)
 console.log(thripled);
-//filter - only items-match cndtn
+//filter - only items-match condition
 let nummbers = [1,2,3,4,5];
-let evens = nummbers.filter(n => n%2 ===0);
-console.log(evens);
+let even = nummbers.filter(n => n%2 ===0);
+console.log(even);
