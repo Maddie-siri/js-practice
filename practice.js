@@ -191,4 +191,72 @@ if("hello"){
     console.log("this runs cuz truth");
 }if(0){
     console.log("this will not run");
+ //feature-practice-functions
 }
+// functions
+// regular function
+function greet(name){
+    return "hello, "+ name;
+}
+console.log(greet("alice"));
+// arrow function
+const greeet = (name) => {
+    return "hello, " + name;
+}
+console.log(greeet("bob"));
+// function parameters
+// default-w/o
+function multiply(a,b){
+    return a * b;
+}
+console.log(multiply(5,2));
+console.log(multiply(5));
+// with- default
+function multiply(a,b=1){
+    return a * b;
+}
+console.log(multiply(5));
+console.log(multiply(5,3));
+const multiplly = (a,b=1) => a*b ; // arrow
+// return- values
+function add(a,b){
+    return a+b;
+}
+console.log(add(2,3));
+// no return
+function sayhi(){
+    console.log("say hi u mf");
+}
+console.log(sayhi());
+// arrow functions
+//expplicit
+const aadd = (a,b) => {
+    return a+b;
+}
+// implicit
+const adadd = (a,b) => a+b;
+// task
+function abdd(a,b){
+    return a+b;
+}console.log(abdd(5,7));
+function isEven(n){
+    return n%2===0;
+}console.log(isEven(4));
+function reversestring(str){
+    return str.split("").reverse().join("");
+}console.log(reversestring("siri"));
+// split-reverse-join
+// task
+for(let i=1;i<=20;i++){
+    // i-3&5-fizzbuzz
+    if(i%3===0 && i%5===0){
+        console.log("fizzbuzz");
+    }else if(i%3===0) {
+        console.log("fizz");
+    }else if(i%5===0){
+        console.log("buzz");
+    }else{
+        console.log(i);
+    }}
+}
+
