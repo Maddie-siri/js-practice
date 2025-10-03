@@ -191,6 +191,7 @@ if("hello"){
     console.log("this runs cuz truth");
 }if(0){
     console.log("this will not run");
+ //feature-practice-functions
 }
 // functions
 // regular function
@@ -257,3 +258,5 @@ for(let i=1;i<=20;i++){
     }else{
         console.log(i);
     }}
+}
+
