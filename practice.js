@@ -112,3 +112,148 @@ console.log(thripled);
 let nummbers = [1,2,3,4,5];
 let even = nummbers.filter(n => n%2 ===0);
 console.log(even);
+// reduce- reduce array - single value
+let numbbers= [1,2,3,4,5];
+let sum = numbbers.reduce((total, n) => total + n,0);
+console.log(sum);
+// another example
+let caart = [
+    {name: "apple",price:5,qty:3},
+    {name: "orange",price:15,qty:2},
+    {name: "headphones",price:50,qty:1}
+];
+let totalprice = caart.reduce((total,item) => {
+    return total + item.price*item.qty;
+},0);
+console.log("total price:", totalprice);
+//objects -key value pairs
+let usser ={
+    name:"siri",
+    age:22,
+    email:"siri@example.com"
+};
+console.log(usser.name);
+console.log(usser["email"]);
+console.log(Object.keys(usser));
+console.log(Object.values(usser));
+// task
+let fruiits = ["apple","orange","kiwi","jack","mango"];
+fruiits.map(fruiit => console.log(fruiit));
+const useer ={
+    name:"alex",
+    age:22,
+    city:"ny",
+}
+console.log(`${useer.name}lives in ${useer.city}`);
+// conditionals
+let aage = 18;
+if (aage < 13){
+    console.log("you are a child");
+}else if(aage < 18){
+    console.log("your'e a teenager");
+}else{
+    console.log("you're an adult");
+}
+//  switch
+let fruit = "apple";
+switch(fruit){
+    case "apple" :
+        console.log("apples are red");
+        break;
+        case "banana":
+            console.log("banana");
+            break;
+            case "orange":
+                console.log("oranges")
+                break;
+                default:
+                    console.log("unknown fruit");
+}
+//loops
+//for
+for(let i=1;i<=5;i++){
+    console.log("count:",i);
+}
+//  while
+let i= 1;
+while(i<=5){
+    console.log("numeber:",i);
+    i++;
+}
+// for...of
+let fruuits = ["apple","mango","orange"];
+for(let fruuit of fruuits){
+    console.log(fruuit);
+}
+// true vs false
+//  false,0,"",null,undefined,nan
+if("hello"){
+    console.log("this runs cuz truth");
+}if(0){
+    console.log("this will not run");
+}
+// functions
+// regular function
+function greet(name){
+    return "hello, "+ name;
+}
+console.log(greet("alice"));
+// arrow function
+const greeet = (name) => {
+    return "hello, " + name;
+}
+console.log(greeet("bob"));
+// function parameters
+// default-w/o
+function multiply(a,b){
+    return a * b;
+}
+console.log(multiply(5,2));
+console.log(multiply(5));
+// with- default
+function multiply(a,b=1){
+    return a * b;
+}
+console.log(multiply(5));
+console.log(multiply(5,3));
+const multiplly = (a,b=1) => a*b ; // arrow
+// return- values
+function add(a,b){
+    return a+b;
+}
+console.log(add(2,3));
+// no return
+function sayhi(){
+    console.log("say hi u mf");
+}
+console.log(sayhi());
+// arrow functions
+//expplicit
+const aadd = (a,b) => {
+    return a+b;
+}
+// implicit
+const adadd = (a,b) => a+b;
+// task
+function abdd(a,b){
+    return a+b;
+}console.log(abdd(5,7));
+function isEven(n){
+    return n%2===0;
+}console.log(isEven(4));
+function reversestring(str){
+    return str.split("").reverse().join("");
+}console.log(reversestring("siri"));
+// split-reverse-join
+// task
+for(let i=1;i<=20;i++){
+    // i-3&5-fizzbuzz
+    if(i%3===0 && i%5===0){
+        console.log("fizzbuzz");
+    }else if(i%3===0) {
+        console.log("fizz");
+    }else if(i%5===0){
+        console.log("buzz");
+    }else{
+        console.log(i);
+    }}
